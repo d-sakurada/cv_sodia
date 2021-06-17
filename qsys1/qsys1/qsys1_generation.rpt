@@ -1,0 +1,75 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Coconala\cycloneV\sodia_ghrd_v16.1.0\sodia_ghrd_v16.1.0\qsys1\qsys1.qsys --block-symbol-file --output-directory=D:\Coconala\cycloneV\sodia_ghrd_v16.1.0\sodia_ghrd_v16.1.0\qsys1\qsys1 --family="Cyclone V" --part=5CSTFD6D5F31I7
+Progress: Loading qsys1/qsys1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding i2c_0 [altera_avalon_i2c 16.1]
+Progress: Parameterizing module i2c_0
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding pio_0 [altera_avalon_pio 16.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: qsys1.i2c_0: Interrupt sender i2c_0.interrupt_sender is not connected to an interrupt receiver
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Coconala\cycloneV\sodia_ghrd_v16.1.0\sodia_ghrd_v16.1.0\qsys1\qsys1.qsys --synthesis=VERILOG --output-directory=D:\Coconala\cycloneV\sodia_ghrd_v16.1.0\sodia_ghrd_v16.1.0\qsys1\qsys1\synthesis --family="Cyclone V" --part=5CSTFD6D5F31I7
+Progress: Loading qsys1/qsys1.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 16.1]
+Progress: Parameterizing module clk_0
+Progress: Adding i2c_0 [altera_avalon_i2c 16.1]
+Progress: Parameterizing module i2c_0
+Progress: Adding master_0 [altera_jtag_avalon_master 16.1]
+Progress: Parameterizing module master_0
+Progress: Adding pio_0 [altera_avalon_pio 16.1]
+Progress: Parameterizing module pio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: qsys1.i2c_0: Interrupt sender i2c_0.interrupt_sender is not connected to an interrupt receiver
+Info: qsys1: Generating qsys1 "qsys1" for QUARTUS_SYNTH
+Info: i2c_0: "qsys1" instantiated altera_avalon_i2c "i2c_0"
+Info: master_0: "qsys1" instantiated altera_jtag_avalon_master "master_0"
+Info: pio_0: Starting RTL generation for module 'qsys1_pio_0'
+Info: pio_0:   Generation command is [exec D:/intelfpga_lite/16.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/16.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/16.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/16.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/16.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/intelfpga_lite/16.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=qsys1_pio_0 --dir=C:/Users/sakku/AppData/Local/Temp/alt8791_8658271719579730151.dir/0002_pio_0_gen/ --quartus_dir=D:/intelfpga_lite/16.1/quartus --verilog --config=C:/Users/sakku/AppData/Local/Temp/alt8791_8658271719579730151.dir/0002_pio_0_gen//qsys1_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0: Done RTL generation for module 'qsys1_pio_0'
+Info: pio_0: "qsys1" instantiated altera_avalon_pio "pio_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "qsys1" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: jtag_phy_embedded_in_jtag_master: "master_0" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "master_0" instantiated timing_adapter "timing_adt"
+Info: fifo: "master_0" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "master_0" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "master_0" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "master_0" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "master_0" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "master_0" instantiated channel_adapter "p2b_adapter"
+Info: rst_controller: "master_0" instantiated altera_reset_controller "rst_controller"
+Info: master_0_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "master_0_master_translator"
+Info: i2c_0_csr_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "i2c_0_csr_translator"
+Info: master_0_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "master_0_master_agent"
+Info: i2c_0_csr_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "i2c_0_csr_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: master_0_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "master_0_master_limiter"
+Info: Reusing file D:/Coconala/cycloneV/sodia_ghrd_v16.1.0/sodia_ghrd_v16.1.0/qsys1/qsys1/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/Coconala/cycloneV/sodia_ghrd_v16.1.0/sodia_ghrd_v16.1.0/qsys1/qsys1/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/Coconala/cycloneV/sodia_ghrd_v16.1.0/sodia_ghrd_v16.1.0/qsys1/qsys1/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: qsys1: Done "qsys1" with 27 modules, 52 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
